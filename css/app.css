@@ -1,0 +1,83 @@
+html,
+body {
+  font-family: Montserrat, monospace;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin: 0;
+}
+.header {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #08d9d6;
+  color: #eaeaea;
+}
+
+.characterMessage {
+  font-size: 2.5rem;
+}
+
+.menu {
+  background-color: #ff2e63;
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gameButton {
+  border: none;
+  border-radius: 3%;
+  background: white;
+  font-size: 100%;
+  padding: 2% 5%;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 250ms ease-in-out, transform 150 ease;
+}
+
+.gameButton:hover {
+  background: #eaeaea;
+}
+
+.gameButton:active {
+  transform: scale(0.98);
+}
+
+.selected {
+  background-color: #eaeaea;
+}
+
+.characterTable {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.square {
+  padding: 30%;
+  background-color: purple;
+  margin: 2.6%;
+  border-radius: 5%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .characterTable {
+    justify-content: space-evenly;
+  }
+  .square {
+    padding: 13%;
+    background-color: red;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .characterTable {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .square {
+    background-color: green;
+    padding: 10%;
+  }
+}
